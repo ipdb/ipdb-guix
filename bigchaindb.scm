@@ -105,14 +105,14 @@ file before tests run.")
 (define-public python-bigchaindb-abci
   (package
     (name "python-bigchaindb-abci")
-    (version "0.7.1")
+    (version "0.7.0")
     (source
      (origin
        (method url-fetch)
        (uri (pypi-uri "bigchaindb-abci" version))
        (sha256
         (base32
-         "0hgbifhcm23nfymwki8mnxv24fl8ag1fq677illjgq5xpgz6256h"))))
+         "0l9sj2ma357jzv03mhfxlp7hmp4yh0fxdn9z90xpqigsg31lvgwv"))))
     (build-system python-build-system)
     (arguments
      ;; FIXME: Tests fail
@@ -277,13 +277,13 @@ so!")
   ;; NOTE New version is available
   (package
     (name "python-jsonschema-2.5")
-    (version "2.6.0")
+    (verslion "2.5.1")
     (source (origin
               (method url-fetch)
               (uri (pypi-uri "jsonschema" version))
               (sha256
                (base32
-                "00kf3zmpp9ya4sydffpifn0j0mzm342a2vzh82p6r0vh10cg7xbg"))))
+                "0hddbqjm4jq63y8jf44nswina1crjs16l9snb6m3vvgyg31klrrn"))))
     (build-system python-build-system)
     (arguments
      ;; FIXME: Tests fail
@@ -411,6 +411,7 @@ instances) and JSON Schema validation capabilities.")
      ;; FIXME: Tests
      '(#:tests? #f))
     (propagated-inputs
+     ;; NOTE pysha3 is python < 3.6 dependency
      `(("python-aiohttp" ,python-aiohttp)
        ("python-bigchaindb-abci"
         ,python-bigchaindb-abci)
