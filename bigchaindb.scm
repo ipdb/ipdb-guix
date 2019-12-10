@@ -277,7 +277,7 @@ so!")
   ;; NOTE New version is available
   (package
     (name "python-jsonschema-2.5")
-    (verslion "2.5.1")
+    (version "2.5.1")
     (source (origin
               (method url-fetch)
               (uri (pypi-uri "jsonschema" version))
