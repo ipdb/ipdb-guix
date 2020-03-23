@@ -467,4 +467,4 @@ instances) and JSON Schema validation capabilities.")
     (synopsis "BigchainDB: The Blockchain Database")
     (description
      "BigchainDB: The Blockchain Database")
-    (license #f)))
+    (license license:asl2.0)))
