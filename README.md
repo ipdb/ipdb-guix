@@ -1,22 +1,13 @@
 # IPDB guix channel
 
-This repository provides package definitions for bigchaindb, tendermint and
-their dependencies.
+This repository provides package definitions for bigchaindb,
+tendermint and their dependencies. There is also a cuirass ci
+specification and build procedure for building bigchaindb and
+tendermint-bin packages.
 
 It is still work in progress. Tendermint provided as precompiled binary at the
 moment. Some package definitions might migrate to guix repository itself in the
 future which will not affect general workflow.
-
-Package substitutes are on the way. This channel is going to be used to provide
-self contained tarball/containerized distributions with all needed to fire up a
-BigchainDB node. Thanks to new `guix deploy` command now we can even create
-whole system configurations that with minor changes can be deployed on various
-cloud platforms which is a subject for further development.
-
-BigchainDB and Tendermint are defined in two separate modules and need to be
-installed separately. MongoDB and Python provided by guix channel (checkout
-./.guix-channel).
-
 
 ## About GNU Guix
 
