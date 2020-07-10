@@ -1,4 +1,12 @@
-# IPDB guix channel
+# Deprecation notice
+
+This project started out as an experiment to provide reproducible package
+distribution for ipdb packages but then evolved into full BigchainDB node
+deployment package with bells and whistles. Further development of this project
+is going to be here: https://github.com/ipdb/bigchaindb-guix .
+
+
+## IPDB guix channel
 
 This repository provides package definitions for bigchaindb,
 tendermint and their dependencies. There is also a cuirass ci
